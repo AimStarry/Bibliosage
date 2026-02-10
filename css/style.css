@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+/* Add this at the very top of style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevents padding from adding to width */
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevents accidental horizontal scrolling */
+}
+
+/* Update these in your style.css */
+:root {
+    --crimson: #7C0A02;
+    --gold: #DAA428;
+    --charcoal: #1A1A1A; /* Darker for better contrast */
+    --cream: #FDFBF7; /* Softer cream */
+    --white: #FFFFFF;
+}
+
+
+/* Modern CTA with Shimmer Effect */
+.hero-btn {
+    position: relative;
+    overflow: hidden;
+    background: var(--gold);
+    color: var(--charcoal);
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid var(--gold);
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background: transparent;
+    color: var(--gold);
+    box-shadow: 0 0 20px rgba(218, 164, 40, 0.4);
+}
+
+/* Featured Section Cards */
+.feature-box {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 15px;
+    border-bottom: 4px solid var(--gold);
+    transition: all 0.4s ease;
+    text-align: left;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    border-bottom: 4px solid var(--crimson);
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    background: var(--cream);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
